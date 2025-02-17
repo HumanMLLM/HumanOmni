@@ -18,7 +18,7 @@
 <div align="center">
 
 | **Model** | **#Total Params** | **Download-Huggingface** | **Download-ModelScope** |
-| :------------: | :------------: | :------------: |
+| :------------: | :------------: | :------------: | :------------: |
 | HumanOmni | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/myroot/HumanOmni-7B)
 
 </div>
