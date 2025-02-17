@@ -129,6 +129,42 @@ pip install --upgrade pip
 pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 ```
+## Traning
+### Data Preparation
+An example json file of the training data:
+```
+[
+    {
+        "video": "/mnt/data/qize.yqz/datasets/human/DFEW/videos/1.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<video>\n<audio>\nAs an emotional recognition expert; throughout the video, which emotion conveyed by the characters is the most obvious to you?\nfear ,angry ,surprise ,happy ,neutral ,sad ,disgust"
+            },
+            {
+                "from": "gpt",
+                "value": "sad"
+            }
+        ],
+        "clip_meta_path": "/mnt/data/qize.yqz/datasets/human/DFEW/body_face/1.json"
+    },
+    {
+        "video": "/mnt/data/qize.yqz/datasets/human/DFEW/videos/1.mp4",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<video>\n<audio>\nAs an emotional recognition expert, in the video, when the characters display their emotions, which predominant feeling is most clearly expressed?\nfear ,disgust ,happy ,sad ,surprise"
+            },
+            {
+                "from": "gpt",
+                "value": "sad"
+            }
+        ],
+        "clip_meta_path": "/mnt/data/qize.yqz/datasets/human/DFEW/body_face/1.json"
+    },
+...
+]
+```
 
 ## Inference
 We provide inference.py for singe video inference. 
