@@ -162,7 +162,7 @@ An example json file of the training data:
         ],
         "clip_meta_path": "/mnt/data/qize.yqz/datasets/human/DFEW/body_face/1.json"
     },
-...
+  ...
 ]
 ```
 
