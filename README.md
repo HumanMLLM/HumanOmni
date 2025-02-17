@@ -83,7 +83,7 @@ Dynamic Facial Expression Caption:
 
 Action and Pose Understanding:
 
-| Method                          | AS  | UA  | AA  | OI  | AC  | FA  | Avg  |
+| Method                          | Action Sequence  | Unexpected Action  | Action Antonym  | Object Interaction  | Action Count  | Fine-grained Action  | Avg  |
 |----------------------------------|-----|-----|-----|-----|-----|-----|------|
 | **Vision large language model** |     |     |     |     |     |     |      |
 | Otter-V                       | 23.0| 29.5| 27.5| 28.0| 26.0| 27.0| 26.8 |
@@ -120,21 +120,21 @@ To set up the recommended environment for HumanOmni, follow these instructions:
 
 ## Inference
 We provide inference.py for singe video inference. 
-### - video + audio 
+ - video + audio 
 ```
 python inference.py --modal video_audio \
   --model_path ./HumanOmni_7B \
   --video_path video.mp4 \
   --instruct "Describe this video."
 ```
-### - only video 
+ - only video 
 ```
 python inference.py --modal video \
   --model_path ./HumanOmni_7B \
   --video_path video.mp4 \
   --instruct "Describe this video."
 ```
-###  - only audio
+- only audio
 ```
 python inference.py --modal audio \
   --model_path ./HumanOmni_7B \
