@@ -21,7 +21,7 @@
 | **Model** | **#Total Params** | **Download-Huggingface** | **Download-ModelScope** |
 | :------------: | :------------: | :------------: | :------------: |
 | HumanOmni-Instruct | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/myroot/HumanOmni-7B) |
-| HumanOmni-Base | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/myroot/HumanOmni-7B)
+| HumanOmni-Base | 7B | Coming Soon  | Coming Soon
 
 </div>
 
@@ -30,8 +30,6 @@
 + 2B-Lite 
 + 72B-Expert 
 
-## Performance
-Here are some performance benchmarks of HumanOmni across various tasks:
 
 ## Performance
 
@@ -85,10 +83,6 @@ Dynamic Facial Expression Caption:
 
 Action and Pose Understanding:
 
-## Performance
-
-Results on MVBench. We select a subset of human-related subtasks from MVBench:
-
 | Method                          | AS  | UA  | AA  | OI  | AC  | FA  | Avg  |
 |----------------------------------|-----|-----|-----|-----|-----|-----|------|
 | **Vision large language model** |     |     |     |     |     |     |      |
@@ -111,6 +105,7 @@ Results on MVBench. We select a subset of human-related subtasks from MVBench:
 | InternLM-XComposer-2.5-OL    | 84.5| 81.0| 75.0| 79.5| 60.5| 46.0| 71.1 |
 | **HumanOmni**                    | 70.0| 78.0| 92.5| 80.5| 65.5| 49.0| **72.6** |
 
+## Demo
 
 ## Environment Setup
 
@@ -122,3 +117,10 @@ To set up the recommended environment for HumanOmni, follow these instructions:
 - **PyTorch**: >=2.2 (with CUDA support)
 - **Transformers**: >=4.45
 - **Accelerate**: >=0.30.1
+
+## Inference
+We provide inference.py for singe video inference. 
+
+
+## Citation
+
