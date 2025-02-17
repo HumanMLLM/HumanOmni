@@ -21,15 +21,12 @@
 | **Model** | **#Total Params** | **Download-Huggingface** | **Download-ModelScope** |
 | :------------: | :------------: | :------------: | :------------: |
 | HumanOmni-Omni | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/myroot/HumanOmni-7B) |
-| HumanOmni-Video | 7B | Coming Soon  | Coming Soon
-| HumanOmni-Audio | - | Coming Soon  | Coming Soon
-
+| HumanOmni-Video | 7B | Coming Soon  | Coming Soon |
+| HumanOmni-Audio | - | Coming Soon  | Coming Soon |
+| HumanOmni-Omni | 2B | Coming Soon  | Coming Soon |
+ 
 </div>
 
-
-### Upcoming Releases
-+ 2B-Lite 
-+ 72B-Expert 
 
 
 ## Performance
