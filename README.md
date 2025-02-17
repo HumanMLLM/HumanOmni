@@ -54,11 +54,7 @@ Emotion Understanding:
 | GPT4-O                       | AV         | 50.57       | 57.19       | 38.29       | 48.82       |
 | **HumanOmni**                    | AV         | **74.86**   | **82.46**   | **52.94**   | **68.40**   |
 
-Results on DFEC:
-
-## Performance
-
-Comparison of different methods on the DFEC benchmark:
+Dynamic Facial Expression Caption:
 
 | Method                          | Correctness | Detail | Context | Temporal | CIDEr  | Rouge-L | AutoDQ  |
 |----------------------------------|-------------|--------|---------|----------|--------|---------|---------|
@@ -86,6 +82,33 @@ Comparison of different methods on the DFEC benchmark:
 | InternLM-XComposer-2.5-OL    | 3.91        | 3.70   | 4.12    | 3.54     | 0.113  | 0.164   | 0.382   |
 | **HumanOmni**                    | **4.58**    | **4.41**| **4.70**| **4.41** | 0.412  | 0.468   | **0.523**|
 
+Action and Pose Understanding:
+
+## Performance
+
+Results on MVBench. We select a subset of human-related subtasks from MVBench:
+
+| Method                          | AS  | UA  | AA  | OI  | AC  | FA  | Avg  |
+|----------------------------------|-----|-----|-----|-----|-----|-----|------|
+| **Vision large language model** |     |     |     |     |     |     |      |
+| Otter-V                       | 23.0| 29.5| 27.5| 28.0| 26.0| 27.0| 26.8 |
+| mPLUG-Owl-V                   | 22.0| 29.0| 34.0| 27.0| 31.5| 29.0| 28.8 |
+| Video-LLaMA                   | 27.5| 39.0| 51.0| 40.5| 34.0| 29.0| 36.8 |
+| LLaMA-Adapter                 | 23.0| 33.0| 51.0| 32.5| 29.0| 30.0| 33.1 |
+| Video-ChatGPT                 | 23.5| 26.5| 62.0| 28.0| 30.5| 22.5| 32.2 |
+| VideoChat                     | 33.5| 40.5| 56.0| 40.5| 35.0| 33.5| 39.8 |
+| VideoChat2                    | 75.5| 60.5| 83.5| 74.5| 37.0| 50.5| 63.6 |
+| ST-LLM                        | 66.0| 58.5| 84.0| 73.5| 36.5| 44.0| 60.4 |
+| PLLaVA                        | 58.0| 61.0| 55.5| 61.0| 39.5| 41.0| 52.6 |
+| VideoLLaMB                   | 54.5| 52.0| 86.5| 58.5| 40.5| 44.5| 56.1 |
+| Qwen2-VL-72B*                | 51.5| 82.0| 93.5| 81.5| 48.5| 49.0| 67.7 |
+| Qwen2-VL-7B*                 | 73.5| 80.0| 79.0| 78.5| 46.0| 49.0| 67.7 |
+| Qwen2-VL-2B*                 | 77.5| 76.5| 76.5| 77.5| 50.0| 47.5| 67.6 |
+| GPT-4V                       | 55.5| 63.5| 72.0| 59.0| 39.0| 47.5| 56.1 |
+| **Omni-modality large language model** |     |     |     |     |     |     |      |
+| VITA                         | 58.0| 81.5| 73.5| 61.5| 45.5| 42.0| 60.3 |
+| InternLM-XComposer-2.5-OL    | 84.5| 81.0| 75.0| 79.5| 60.5| 46.0| 71.1 |
+| **HumanOmni**                    | 70.0| 78.0| 92.5| 80.5| 65.5| 49.0| **72.6** |
 
 
 ## Environment Setup
