@@ -118,6 +118,18 @@ To set up the recommended environment for HumanOmni, follow these instructions:
 - **Transformers**: >=4.45
 - **Accelerate**: >=0.30.1
 
+Or you can quickly set up the environment as follows:
+
+```
+git clone https://github.com/HumanMLLM/HumanOmni
+cd HumanOmni
+conda create -n humanOmni python=3.10 -y
+conda activate humanOmni
+pip install --upgrade pip
+pip install -r requirements.txt
+pip install flash-attn --no-build-isolation
+```
+
 ## Inference
 We provide inference.py for singe video inference. 
  - video + audio 
