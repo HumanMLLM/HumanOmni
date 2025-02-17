@@ -32,20 +32,29 @@
 ## Performance
 Here are some performance benchmarks of HumanOmni across various tasks:
 
-<div align="center">
-  <figure>
-    <img src="figures/result-emotion.png" alt="Emotion Understanding Task Results" width="400"/>
-    <figcaption>Fig 1: Performance on the emotion understanding task.</figcaption>
-  </figure>
-  <figure>
-    <img src="figures/result-dfec.png" alt="Dynamic Facial Expression Caption Task Results" width="400"/>
-    <figcaption>Fig 2: Performance on the dynamic facial expression caption task.</figcaption>
-  </figure>
-  <figure>
-    <img src="figures/result-mvbench.png" alt="Movement and Pose Understanding Task Results" width="400"/>
-    <figcaption>Fig 3: Performance on the action and pose understanding task.</figcaption>
-  </figure>
-</div>
+## Performance
+
+Here are some performance benchmarks of HumanOmni across various tasks:
+
+| Method                          | Modalities | DFEW (UAR) | DFEW (WAR) | MAFW (UAR) | MAFW (WAR) |
+|----------------------------------|------------|-------------|-------------|-------------|-------------|
+| **Specialized models for emotion-related tasks** |            |             |             |             |             |
+| Wav2Vec2.0                   | A          | 36.15       | 43.05       | 21.59       | 29.69       |
+| HuBERT                       | A          | 35.98       | 43.24       | 25.00       | 32.60       |
+| DFER-CLIP                     | V          | 59.61       | 71.25       | 38.89       | 52.55       |
+| MAE-DFER                      | V          | 63.41       | 74.43       | 41.62       | 54.31       |
+| HiCMAE                        | AV         | 63.76       | 75.01       | 42.65       | 56.17       |
+| Emotion-LLaMA                 | AV         | 64.21       | 77.06       | -           | -           |
+| MMA-DFER                         | AV         | 66.85       | 77.43       | 44.25       | 58.45       |
+| **Other models**                 |            |             |             |             |             |
+| Qwen2-VL-7B                  | V          | 43.08       | 52.83       | 31.67       | 45.89       |
+| Qwen2-VL-72B                  | V          | 39.24       | 45.12       | 42.61       | 46.07       |
+| VITA                          | AV         | 21.36       | 32.07       | 14.05       | 33.38       |
+| InternLM-XComposer-2.5-OL     | AV         | 44.23       | 51.29       | 33.78       | 46.81       |
+| GPT4-O                       | AV         | 50.57       | 57.19       | 38.29       | 48.82       |
+| **HumanOmni**                    | AV         | **74.86**   | **82.46**   | **52.94**   | **68.40**   |
+
+
 
 ## Environment Setup
 
