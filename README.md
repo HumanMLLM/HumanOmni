@@ -1,4 +1,4 @@
-# HumanOmni: Human-Centric Omnimodal Large Language Model
+# HumanOmni: A Large Vision-Speech Language Model for Human-Centric Video Understanding
 
 [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/myroot/HumanOmni-7B)
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)
@@ -9,10 +9,12 @@
 </div>
 
 ## Introduction
-**HumanOmni** is the industry's first human-centric omnimultimodal large language model designed to achieve comprehensive understanding in human-centric scenes.
-1) **Domain-specific capability**: Trained on 2.4M human-centric video clips with 14M instructions
-2) **Adaptive fusion**: Features three specialized branches with instruction-guided dynamic fusion
-3) **Audio-visual synergy**: Integrates environmental audio cues with visual understanding
+**HumanOmni** is the industry’s first human-centric Omni-multimodal large language model for comprehensive understanding in human-centric scenes.
+1) **2.4M human-centric video clips with over 14M double-check instructions**: We have constructed a dataset containing over 2.4M human-centric video clips, providing rich and detailed information about individuals. We provide over 14M instruction data for visual pretraining.
+2) **50K video clips with more than 100K manually annotated instrcutions**: We have manually annotated 50K video clips with more than 100K instructions related to emotion recognition, facial description, and speaker-specific speech recognition for visual fine-tuning and cross-modal interaction integration.
+3) **Three human-specific branch**: We use three branches to handle face-related, body-related, and interaction-related scenes separately in HumanOmni. HumanOmni dynamically adjusts its fusion weights based on input instructions, ensuring accurate responses across various scenes.
+4) 
+5) **Audio-visual synergy**: HumanOmni can simultaneously understand vision and speech, allowing for a more comprehensive understanding of complex scenes.
    
 ## Model Downloads
 <div align="center">
