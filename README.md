@@ -20,8 +20,9 @@
 
 | **Model** | **#Total Params** | **Download-Huggingface** | **Download-ModelScope** |
 | :------------: | :------------: | :------------: | :------------: |
-| HumanOmni-Instruct | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/myroot/HumanOmni-7B) |
-| HumanOmni-Base | 7B | Coming Soon  | Coming Soon
+| HumanOmni-Omni | 7B | [![Hugging Face](https://img.shields.io/badge/HuggingFace-HumanOmni-yellow)](https://huggingface.co/StarJiaxing/HumanOmni-7B)  | [![ModelScope](https://img.shields.io/badge/ModelScope-HumanOmni-blue)](https://modelscope.cn/models/myroot/HumanOmni-7B) |
+| HumanOmni-Video | 7B | Coming Soon  | Coming Soon
+| HumanOmni-Audio | - | Coming Soon  | Coming Soon
 
 </div>
 
@@ -129,7 +130,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 pip install flash-attn --no-build-isolation
 ```
-## Traning
+## Training on Custom Dataset
 ### Data Preparation
 An example json file of the training data:
 ```
@@ -165,6 +166,10 @@ An example json file of the training data:
   ...
 ]
 ```
+
+### Multi-Modal SFT
+- Download the required weights: (1) HumanOmni-7B-video (2) HumanOmni-7B-audio
+- Loading the weights and the prepared dataset. (The training scripts will be released soon.)
 
 ## Inference
 We provide inference.py for singe video inference. 
