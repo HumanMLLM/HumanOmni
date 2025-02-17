@@ -120,12 +120,27 @@ To set up the recommended environment for HumanOmni, follow these instructions:
 
 ## Inference
 We provide inference.py for singe video inference. 
-### video + audio 
-python inference.py --modal video_audio --model_path ./HumanOmni_7B --video_path video.mp4 --instruct "Describe this video."
-### only video 
-python inference.py --modal video --model_path ./HumanOmni_7B --video_path video.mp4 --instruct "Describe this video."
-### only audio
-python inference.py --modal audio --model_path ./HumanOmni_7B --video_path video.mp4 --instruct "Describe this video."
+### - video + audio 
+```
+python inference.py --modal video_audio \
+  --model_path ./HumanOmni_7B \
+  --video_path video.mp4 \
+  --instruct "Describe this video."
+```
+### - only video 
+```
+python inference.py --modal video \
+  --model_path ./HumanOmni_7B \
+  --video_path video.mp4 \
+  --instruct "Describe this video."
+```
+###  - only audio
+```
+python inference.py --modal audio \
+  --model_path ./HumanOmni_7B \
+  --video_path video.mp4 \
+  --instruct "Describe this video."
+```
 
 ## Citation
 
